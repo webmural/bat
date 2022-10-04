@@ -23,21 +23,32 @@ figure {
 
 samp {
   align-items: center;
+  border-radius: 0 3%;
   display: flex;
   flex-flow: column;
   font-size: 2em;
   font-weight: bold;
   justify-content: center;
-  margin-block-start: 33vh;
-  margin-block-end: 33vh;
+  min-height: 100vh;
 }
 
 figcaption {
   font-family: sans-serif;
   line-height: 1.5;
   max-width: 10em;
-  position: absolute;
-  top: 100vh;
+  margin: auto;
   padding: 5vmin;
   padding-bottom: 5rem;
+}
+
+b {
+  text-shadow:
+    -.1ex .1ex 0,
+    -.2ex .2ex 0,
+    .3ex -.3ex 0;
+}
+
+::selection {
+  background: rebeccapurple;
+  color: powderblue;
 }
