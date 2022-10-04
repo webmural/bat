@@ -14,6 +14,7 @@
 
 body {
   margin: auto;
+
 }
 
 figure {
@@ -34,8 +35,8 @@ samp {
 
 figcaption {
   font-family: sans-serif;
-  line-height: 1.5;
-  max-width: 10em;
+  line-height: 1.6;
+  max-width: 11em;
   margin: auto;
   padding: 5vmin;
   padding-bottom: 5rem;
@@ -46,6 +47,29 @@ b {
     -.1ex .1ex 0,
     -.2ex .2ex 0,
     .3ex -.3ex 0;
+}
+
+strong:last-of-type {
+  display: block;
+  text-indent: 12em;
+  transform: rotate(-72deg);
+}
+
+strong {
+  text-shadow:
+    -.1ex .1ex 0,
+    -.2ex .2ex 0,
+    .3ex -.3ex 0,
+    .3ex .5ex 0,
+    .8ex .8ex 0;
+}
+
+strong::before {
+  content: "--";
+}
+
+strong::after {
+  content: "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++∞";
 }
 
 ::selection {
